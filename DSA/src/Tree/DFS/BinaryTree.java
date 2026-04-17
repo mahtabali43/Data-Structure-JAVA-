@@ -1,12 +1,11 @@
 package Tree.DFS;
 
-public class BinaryTree implements BinaryTreeInterface{
+
+
+public class BinaryTree {
          Node root;
          
-         
-     
 
-	@Override
 	public void InOrder(Node root) {
 		if(root==null) {
 			return;
@@ -22,7 +21,7 @@ public class BinaryTree implements BinaryTreeInterface{
 		
 	}
 
-	@Override
+	
 	public void PostOrder(Node root) {
 		if(root==null) {
 			return;
@@ -39,7 +38,6 @@ public class BinaryTree implements BinaryTreeInterface{
 
 	}
 
-	@Override
 	public void PreOrder(Node root) {
 		if(root==null) {
 			return;

@@ -5,7 +5,6 @@ public class BinaryTreeApp {
 	public static void main(String[] args) {
 		
 		BinaryTreeOrdered bt = new BinaryTreeOrdered();
-		
 		bt.Insert(10);
 		bt.Insert(13);
 		bt.Insert(5);
@@ -15,6 +14,7 @@ public class BinaryTreeApp {
 		bt.Insert(16);
 		bt.Insert(14);
 		bt.Insert(20);
+	    
 		System.out.print("PreOrder: ");
 
 		bt.PreOrderTraverse();
@@ -73,9 +73,6 @@ public class BinaryTreeApp {
 //		
 	}
 
-	private static void setRoot(Node root) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }

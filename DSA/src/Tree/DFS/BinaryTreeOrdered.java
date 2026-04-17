@@ -2,22 +2,27 @@ package Tree.DFS;
 
 public class BinaryTreeOrdered {
 
-	Node root;
+	Node root ;
 	
 	void Insert(int data) {
-		
+//		if(root==null) {
+//			root = new Node(data);
+//			return;
+//		}
 		root = insertt(root, data);
 		
 		}
 
-
+// insertion recursion method 1
+	
 	
 	private Node insertt(Node root, int data) {
 		
 		if(root == null) {
 			 root = new Node(data);
+			 return root;
 		}
-		else if(data<=root.data) {
+		 if(data<=root.data) {
 			root.lchild = insertt(root.lchild, data);
 		}
 		else if(data>root.data) {
@@ -26,6 +31,35 @@ public class BinaryTreeOrdered {
 		return root;
 	}
 
+	
+	// insertion recursion method 1
+	
+//	private Node insertt(Node root, int data) {
+//		
+//		if(data<root.data) {
+//			if(root.lchild!=null) {
+//				insertt(root.lchild, data);
+//			}
+//			else{
+//				Node node = new Node(data);
+//				root.lchild = node;
+//				
+//			}
+//		}
+//		else {
+//			if(root.rchild!=null) {
+//				insertt(root.rchild, data);
+//			}
+//			else {
+//				Node node = new Node(data);
+//				root.rchild = node;
+//				
+//			}
+//		}
+//		
+//		return root;
+//	}
+	
 	void PreOrderRec(Node root) {
 		if(root == null) {
 			return;
